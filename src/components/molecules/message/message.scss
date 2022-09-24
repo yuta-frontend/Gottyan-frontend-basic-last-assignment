@@ -4,8 +4,8 @@
   text-align: center;
   padding: 52px 20px;
 
-  @media screen and (max-width: $breakpoint-md){
-   padding: 32px 20px;
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 32px 20px;
   }
 
   & .title {
@@ -24,7 +24,7 @@
   & .explaination {
     line-height: 36px;
     font-size: $fontsize-s;
-    font-family: $fontfamily-gothic;
+    margin-bottom: 0px;
 
     @media screen and (max-width: $breakpoint-md) {
       line-height: 28px;
