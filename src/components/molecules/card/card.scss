@@ -21,6 +21,7 @@
       color: $orange_bistre;
       z-index: 2;
       margin-left: 6px;
+      margin-bottom: 0px;
     }
 
     .img {
@@ -48,10 +49,6 @@
       font-size: $fontsize-s;
       margin-bottom: 30px;
       font-family: $fontfamily-gothic;
-    }
-
-    .button {
-      margin-bottom: 32px;
     }
   }
 }
