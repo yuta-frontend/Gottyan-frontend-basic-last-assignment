@@ -1,0 +1,68 @@
+@use "../../variables" as *;
+.plan {
+  text-align: center;
+  @media screen and(max-width:$breakpoint-md) {
+    margin-bottom: 24px;
+  }
+
+  .title {
+    background-color: $orange_zorba;
+    color: $white;
+    font-size: $fontsize-l;
+    margin-bottom: 0;
+    padding: 20px 40px;
+  }
+
+  &:nth-child(even) {
+    border: 5px solid $orange_bistre;
+    box-sizing: border-box;
+    .title {
+      padding: 15px 40px 20px;
+      background-color: $orange_bistre;
+    }
+    .frame2 p:last-of-type {
+      padding: 20px 50px 15px;
+    }
+  }
+  .text-container {
+    background-color: $gray_desertStorm;
+    color: $orange_bistre;
+    position: relative;
+    margin-bottom: 0;
+
+    .cost-wrapper {
+      display: flex;
+      justify-content: center;
+      padding-top: 24px;
+
+      .cost-mark {
+        font-size: $fontsize-l;
+        font-weight: 700;
+        margin: 24px 4px 0px 0px;
+        position: relative;
+        margin-bottom: 0;
+      }
+
+      .cost {
+        font-size: $fontsize-xxl;
+        font-weight: 700;
+      }
+    }
+    .month {
+      font-size: $fontsize-s;
+      font-weight: 400;
+      padding-bottom: 24px;
+      margin-bottom: 0;
+    }
+  }
+  .frame2 {
+    font-size: $fontsize-s;
+    color: $black;
+  }
+
+  .frame2 > p {
+    border: 1px solid $gray_gainsboro;
+    padding: 20px 50px;
+    margin-bottom: 0;
+  }
+}
