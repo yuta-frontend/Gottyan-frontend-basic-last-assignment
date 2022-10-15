@@ -2,7 +2,7 @@
 .card {
   border: 0px;
 
-  .card-img {
+  .card-container {
     border-radius: 0;
     position: relative;
 
@@ -15,7 +15,6 @@
 
     .title {
       position: absolute;
-      font-family: $fontfamily-gothic;
       font-size: $fontsize-l;
       font-weight: 700;
       color: $orange_bistre;
@@ -24,15 +23,15 @@
       margin-bottom: 0px;
     }
 
-    .img {
+    .img-wrapper {
       overflow: hidden;
-    }
-    img {
-      width: 100%;
-      transition: 0.5s;
-      @media screen and (min-width: $breakpoint-md) {
-        &:hover {
-          transform: scale(1.2);
+      img {
+        width: 100%;
+        transition: 0.5s;
+        @media screen and (min-width: $breakpoint-md) {
+          &:hover {
+            transform: scale(1.2);
+          }
         }
       }
     }
@@ -40,8 +39,7 @@
 
   .card-body {
     padding: 32px;
-    display: flex;
-    align-items: center;
+    display: grid;
     flex-direction: column;
     background-color: $white_smoke;
 
@@ -49,7 +47,9 @@
       font-weight: 400;
       font-size: $fontsize-s;
       margin-bottom: 30px;
-      font-family: $fontfamily-gothic;
+    }
+    .button {
+      justify-self: center;
     }
   }
 }
