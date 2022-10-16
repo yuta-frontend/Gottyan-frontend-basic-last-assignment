@@ -12,7 +12,7 @@
     color: $white;
     font-size: $fontsize-l;
     margin-bottom: 0;
-    padding: 22.5px 40px;
+    padding: 20px 40px;
   }
 
   &:nth-child(even) {
@@ -28,7 +28,6 @@
   }
   .text-container {
     background-color: $gray_desertStorm;
-    color: $orange_bistre;
     position: relative;
     margin-bottom: 0;
     padding: 24px 0px;
@@ -36,14 +35,14 @@
 
     .cost-wrapper {
       display: flex;
+      color: $orange_bistre;
       justify-content: center;
-      gap:4px;
+      gap: 4px;
 
       .cost-mark {
         font-size: $fontsize-l;
         font-weight: 700;
         margin: 24px 0px 0px;
-        position: relative;
         margin-bottom: 0;
       }
 
@@ -55,6 +54,7 @@
       }
     }
     .month {
+      color: $black;
       font-size: $fontsize-s;
       font-weight: 400;
       margin-bottom: 0;
@@ -64,12 +64,12 @@
   .frame2 {
     font-size: $fontsize-s;
     color: $black;
-  }
 
-  .frame2 > p {
-    border: solid $gray_gainsboro;
-    border-width: 0 1px 1px;
-    padding: 19px 56px;
-    margin-bottom: 0px;
+    & > p {
+      border: solid $gray_gainsboro;
+      border-width: 0 1px 1px;
+      padding: 19px 56px;
+      margin-bottom: 0px;
+    }
   }
 }
