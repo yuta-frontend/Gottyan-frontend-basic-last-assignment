@@ -7,6 +7,7 @@
   }
 
   .title {
+    font-weight: 700;
     background-color: $orange_zorba;
     color: $white;
     font-size: $fontsize-l;
@@ -50,6 +51,7 @@
         line-height: 55.74px;
         font-size: $fontsize-xxl;
         font-weight: 700;
+        font-family: $fontfamily-gothic;
       }
     }
     .month {
