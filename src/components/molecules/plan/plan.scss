@@ -1,74 +1,73 @@
 @use "../../variables" as *;
-.all {
-  display:flex;
-  .plan {
-    text-align: center;
-    @media screen and(max-width:$breakpoint-md) {
-      margin-bottom: 24px;
-    }
 
+.plan {
+  text-align: center;
+  @media screen and(max-width:$breakpoint-md) {
+    margin-bottom: 24px;
+  }
+
+  .title {
+    background-color: $orange_zorba;
+    color: $white;
+    font-size: $fontsize-l;
+    margin-bottom: 0;
+    padding: 22.5px 40px;
+  }
+
+  &:nth-child(even) {
+    border: 5px solid $orange_bistre;
+    box-sizing: border-box;
     .title {
-      
-      background-color: $orange_zorba;
-      color: $white;
-      font-size: $fontsize-l;
-      margin-bottom: 0;
-      padding: 22.5px 40px;
+      padding: 17.5px 40px 22.5px;
+      background-color: $orange_bistre;
     }
-
-    &:nth-child(even) {
-      border: 5px solid $orange_bistre;
-      box-sizing: border-box;
-      .title {
-        padding: 17.5px 40px 22.5px;
-        background-color: $orange_bistre;
-      }
-      .frame2 p:last-of-type {
-        padding: 20px 50px 13px;
-      }
+    .frame2 p:last-of-type {
+      padding: 20px 50px 13px;
     }
-    .text-container {
-      background-color: $gray_desertStorm;
-      color: $orange_bistre;
-      position: relative;
-      margin-bottom: 0;
-      padding: 24px 0px;
-      border: solid 1px $gray_gainsboro;
+  }
+  .text-container {
+    background-color: $gray_desertStorm;
+    color: $orange_bistre;
+    position: relative;
+    margin-bottom: 0;
+    padding: 24px 0px;
+    border: solid 1px $gray_gainsboro;
 
-      .cost-wrapper {
-        display: flex;
-        justify-content: center;
+    .cost-wrapper {
+      display: flex;
+      justify-content: center;
+      gap:4px;
 
-        .cost-mark {
-          font-size: $fontsize-l;
-          font-weight: 700;
-          margin: 24px 4px 0px 0px;
-          position: relative;
-          margin-bottom: 0;
-        }
-
-        .cost {
-          font-size: $fontsize-xxl;
-          font-weight: 700;
-        }
-      }
-      .month {
-        font-size: $fontsize-s;
-        font-weight: 400;
+      .cost-mark {
+        font-size: $fontsize-l;
+        font-weight: 700;
+        margin: 24px 0px 0px;
+        position: relative;
         margin-bottom: 0;
       }
+
+      .cost {
+        line-height: 55.74px;
+        font-size: $fontsize-xxl;
+        font-weight: 700;
+      }
     }
-    .frame2 {
+    .month {
       font-size: $fontsize-s;
-      color: $black;
+      font-weight: 400;
+      margin-bottom: 0;
+      line-height: 20.27px;
     }
+  }
+  .frame2 {
+    font-size: $fontsize-s;
+    color: $black;
+  }
 
-    .frame2 > p {
-      border: solid $gray_gainsboro;
-      border-width: 0 1px 1px;
-      padding: 19px 56px;
-      margin-bottom: 0px;
-
-    }
+  .frame2 > p {
+    border: solid $gray_gainsboro;
+    border-width: 0 1px 1px;
+    padding: 19px 56px;
+    margin-bottom: 0px;
   }
 }
