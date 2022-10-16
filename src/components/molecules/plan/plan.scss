@@ -1,5 +1,4 @@
 @use "../../variables" as *;
-
 .plan {
   text-align: center;
   @media screen and(max-width:$breakpoint-md) {
@@ -19,7 +18,7 @@
     border: 5px solid $orange_bistre;
     box-sizing: border-box;
     .title {
-      padding: 17.5px 40px 22.5px;
+      padding: 15px 40px 20px;
       background-color: $orange_bistre;
     }
     .frame2 p:last-of-type {
