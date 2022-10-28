@@ -1,0 +1,39 @@
+@use "../../variables" as *;
+.news {
+  color: $black;
+  .news-and-events-title {
+    & > h2 {
+      font-size: $fontsize-xxl;
+    }
+  }
+  .frame1 {
+    background-color: $white;
+    padding-bottom: 30px;
+    .wrapper {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      border: solid $gray_gainsboro;
+      border-width: 1px;
+
+      + .wrapper {
+        border-top: none;
+      }
+
+      .date {
+        color: $gray_nobel;
+        font-size: $fontsize-xs;
+      }
+
+      .text {
+        &:hover {
+          color: $orange_bistre;
+        }
+      }
+    }
+  }
+  .frame2 {
+    text-align: right;
+  }
+}
