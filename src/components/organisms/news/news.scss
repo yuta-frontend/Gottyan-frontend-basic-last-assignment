@@ -27,8 +27,17 @@
       }
 
       .text {
-        &:hover {
-          color: $orange_bistre;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        a {
+          text-decoration: none;
+          color: $black;
+          &:hover {
+            color: $orange_bistre;
+            transition: 0.5s;
+          }
         }
       }
     }
