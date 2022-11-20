@@ -16,33 +16,29 @@
       gap: 10px;
       border: solid $gray_gainsboro;
       border-width: 1px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
 
       + .wrapper {
         border-top: none;
       }
 
-      .date {
+      time {
         color: $gray_nobel;
         font-size: $fontsize-xs;
       }
-
-      .text {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-
-        a {
-          text-decoration: none;
-          color: $black;
-          &:hover {
-            color: $orange_bistre;
-            transition: 0.5s;
-          }
+      a {
+        text-decoration: none;
+        color: $black;
+        transition: 0.2s ease;
+        &:hover {
+          color: $orange_bistre;
         }
       }
     }
   }
-  .frame2 {
-    text-align: right;
-  }
+}
+.frame2 {
+  text-align: right;
 }
