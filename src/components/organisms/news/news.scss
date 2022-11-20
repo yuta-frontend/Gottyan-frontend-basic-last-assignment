@@ -1,11 +1,7 @@
 @use "../../variables" as *;
 .news {
   color: $black;
-  .news-and-events-title {
-    & > h2 {
-      font-size: $fontsize-xxl;
-    }
-  }
+  
   .frame1 {
     background-color: $white;
     padding-bottom: 30px;
@@ -15,8 +11,7 @@
       flex-direction: column;
       gap: 10px;
       border: solid $gray_gainsboro;
-      border-width: 1px; 
-      
+      border-width: 1px;
 
       + .wrapper {
         border-top: none;
@@ -25,7 +20,7 @@
       time {
         color: $gray_nobel;
         font-size: $fontsize-xs;
-        line-height: 12px;
+        line-height: 1;
       }
       a {
         text-decoration: none;
@@ -42,7 +37,7 @@
       }
     }
   }
-}
-.frame2 {
-  text-align: right;
+  .frame2 {
+    text-align: right;
+  }
 }
