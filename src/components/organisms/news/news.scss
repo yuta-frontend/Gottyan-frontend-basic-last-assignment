@@ -1,0 +1,43 @@
+@use "../../variables" as *;
+.news {
+  color: $black;
+  
+  .frame1 {
+    background-color: $white;
+    padding-bottom: 30px;
+    .wrapper {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      border: solid $gray_gainsboro;
+      border-width: 1px;
+
+      + .wrapper {
+        border-top: none;
+      }
+
+      time {
+        color: $gray_nobel;
+        font-size: $fontsize-xs;
+        line-height: 1;
+      }
+      a {
+        text-decoration: none;
+        color: $black;
+        transition: 0.2s ease;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 23px;
+
+        &:hover {
+          color: $orange_bistre;
+        }
+      }
+    }
+  }
+  .frame2 {
+    text-align: right;
+  }
+}
