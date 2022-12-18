@@ -1,0 +1,110 @@
+@use "../../variables" as *;
+.header {
+  .navbar {
+    position: relative;
+    background-color: $black;
+    @media screen and (min-width: $breakpoint-xl) {
+      background-color: $black_50;
+    }
+
+    .container-fluid {
+      height: 60px;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      position: relative;
+      @media screen and(min-width:$breakpoint-xl) {
+        height: 90px;
+      }
+      .header-image1 {
+        box-sizing: content-box;
+        padding: 19.72px 16px;
+        width: 120px;
+        height: 20.56px;
+        @media screen and(min-width:$breakpoint-xl) {
+          padding: 33.01px 30px;
+          width: 140px;
+          height: 23.99px;
+        }
+      }
+      .navbar-toggler {
+        outline: none;
+        padding: 0;
+        border: 0;
+        margin: 0 16px 0 auto;
+      }
+    }
+    #humberger {
+      .humberger-container {
+        padding: 15px 16px;
+        display: flex;
+        position: relative;
+
+        .navbar-toggler {
+          background-color: $black;
+          outline: none;
+          padding: 0;
+          border: 0;
+          margin: 0 0 0 auto;
+        }
+
+        .humberger-text {
+          color: $white;
+          text-decoration: none;
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: normal;
+          @media screen and (min-width: $breakpoint-xl) {
+            &:hover {
+              color: $gray_nobel;
+              transition: 0.2s ease;
+            }
+          }
+        }
+      }
+      #concept {
+        @media screen and (min-width: $breakpoint-xl) {
+          position: absolute;
+          top: 104px;
+          left: 580px;
+        }
+        
+
+          .concept-text {
+            padding: 15px 28px;
+            color: $white;
+            background-color: $black;
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: normal;
+            display: flex;
+            @media screen and (min-width: $breakpoint-xl) {
+              &:hover {
+                background-color: $orange_bistre;
+              
+            }
+          }
+        }
+      }
+    }
+    @media screen and (min-width: $breakpoint-xl) {
+      .container-1 {
+        background-color: $black_50;
+        height: 90px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        position: relative;
+        .header-image1 {
+          padding: 33.01px 30px;
+          width: 140px;
+          height: 23.99px;
+        }
+        .header-menu {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
