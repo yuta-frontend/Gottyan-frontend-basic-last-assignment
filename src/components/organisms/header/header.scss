@@ -38,17 +38,24 @@
     #humberger {
       .humberger-container {
         padding: 0;
-     
+        @media screen and (min-width: $breakpoint-xl) {
+          &:last-child {
+            .humberger-text {
+              padding-right: 50px;
+            }
+          }
+        }
+
         .humberger-text {
-          
           display: block;
           color: $white;
           text-decoration: none;
           font-size: 14px;
-          padding:16px;
+          padding: 15px 16px;
           line-height: 20px;
           font-weight: normal;
           @media screen and (min-width: $breakpoint-xl) {
+            padding: 20px;
             &:hover {
               color: $gray_nobel;
               transition: 0.2s ease;
@@ -69,12 +76,11 @@
           }
         }
         #concept {
-          position:relative;
-          padding-left:12px;
+          position: relative;
+          padding-left: 12px;
           @media screen and (min-width: $breakpoint-xl) {
             position: absolute;
             top: 90px;
-            
           }
 
           .concept-text {
