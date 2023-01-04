@@ -95,6 +95,7 @@
             @media screen and (min-width: $breakpoint-xl) {
               &:hover {
                 background-color: $orange_bistre;
+                transition: 0.2s ease;
               }
             }
           }
