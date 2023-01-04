@@ -69,11 +69,12 @@
           }
         }
         #concept {
+          position:relative;
           padding-left:12px;
           @media screen and (min-width: $breakpoint-xl) {
             position: absolute;
             top: 90px;
-            left: 580px;
+            
           }
 
           .concept-text {
