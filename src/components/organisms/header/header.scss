@@ -37,11 +37,15 @@
     }
     #humberger {
       .humberger-container {
-        padding: 15px 16px;
+        padding: 0;
+     
         .humberger-text {
+          
+          display: block;
           color: $white;
           text-decoration: none;
           font-size: 14px;
+          padding:16px;
           line-height: 20px;
           font-weight: normal;
           @media screen and (min-width: $breakpoint-xl) {
@@ -55,18 +59,20 @@
         .concept-container {
           display: flex;
           position: relative;
+          align-self: center;
           .navbar-toggler {
             background-color: $black;
             outline: none;
             padding: 0;
             border: 0;
-            margin: 0 0 0 auto;
+            margin: 0 16px 0 auto;
           }
         }
         #concept {
+          padding-left:12px;
           @media screen and (min-width: $breakpoint-xl) {
             position: absolute;
-            top: 88px;
+            top: 90px;
             left: 580px;
           }
 
