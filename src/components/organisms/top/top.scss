@@ -11,12 +11,15 @@
         height:360px;
       }
     }
-    .message {
+    .message-container {
       padding:0;
       display: flex;
       align-items: left;
   
       .title {
+        font-family: $fontfamily-mincho;
+        font-size: 36px;
+        line-height: 51.73px;
         text-align: left;
         margin:0;
         position: absolute;
@@ -25,6 +28,10 @@
         transform: translate(-50%, -50%);
         color: $white;
         writing-mode: vertical-rl;
+        @media screen and(max-width:$breakpoint-lg) {
+          line-height:28.74px;
+          font-size:20px;
+        }
       }
     }
   }
