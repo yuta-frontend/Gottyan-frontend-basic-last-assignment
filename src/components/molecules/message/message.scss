@@ -4,7 +4,7 @@
   text-align: center;
   padding: 52px 20px;
 
-  @media screen and (max-width: $breakpoint-md) {
+  @media screen and (max-width: $breakpoint-lg) {
     padding: 32px 20px;
   }
 
@@ -14,14 +14,14 @@
     line-height: 54px;
     margin-bottom: 10px;
 
-    @media screen and (max-width: $breakpoint-md) {
+    @media screen and (max-width: $breakpoint-lg) {
       font-size: $fontsize-l;
       line-height: 30px;
       margin-bottom: 6px;
     }
   }
 
-  & .explaination {
+  & .explanation {
     line-height: 36px;
     font-size: $fontsize-s;
     margin-bottom: 0px;
