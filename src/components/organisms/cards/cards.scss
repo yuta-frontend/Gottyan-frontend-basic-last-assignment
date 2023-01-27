@@ -1,0 +1,16 @@
+@use "../../variables" as *;
+.cards {
+  .card{
+    margin-bottom:40px;
+  }
+  @media screen and(min-width:$breakpoint-md) {
+    display: flex;
+    .card{
+      margin-bottom:100px;
+      padding-right:24px;
+    }
+    .card:first-child{
+      padding-left:24px;
+    }
+  }
+}
