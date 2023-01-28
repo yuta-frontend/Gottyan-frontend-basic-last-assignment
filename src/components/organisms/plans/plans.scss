@@ -1,7 +1,8 @@
 @use "../../variables" as *;
 .plans {
   .message {
-    padding: 50px 0 56px;
+    padding-top: 0;
+    padding-bottom: 56px;
     .title {
       color: $orange_bistre;
     }
@@ -12,9 +13,14 @@
     justify-content: center;
     margin-bottom: 35px;
   }
+  @media screen and(min-width:$breakpoint-lg) {
+    .button-container {
+      margin-bottom: 100px;
+    }
+  }
   @media screen and (min-width: $breakpoint-md) {
     .message {
-      padding: 50px 0 32px;
+      padding-bottom: 32px;
     }
     .plan-container {
       display: flex;
