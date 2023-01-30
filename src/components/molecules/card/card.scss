@@ -39,13 +39,13 @@
   }
 
   .card-body {
-    
     padding: 32px;
     display: grid;
     flex-direction: column;
     background-color: $white_smoke;
 
     .text {
+      line-height: 33.4px;
       font-weight: 400;
       font-size: $fontsize-s;
       margin-bottom: 30px;
