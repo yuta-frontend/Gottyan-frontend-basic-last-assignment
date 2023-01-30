@@ -1,0 +1,43 @@
+@use "../../variables" as *;
+.plans {
+  overflow: hidden;
+  .message {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    .title {
+      color: $orange_bistre;
+    }
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+  }
+  @media screen and(min-width:$breakpoint-lg) {
+    .button-container {
+      margin-bottom: 100px;
+    }
+  }
+  @media screen and (min-width: $breakpoint-md) {
+    .message {
+      padding-bottom: 32px;
+    }
+    .plan-container {
+      display: flex;
+      margin-bottom: 45px;
+      justify-content: center;
+
+      .plan {
+        height: 100%;
+        width: 100%;
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+      }
+      .plan:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
