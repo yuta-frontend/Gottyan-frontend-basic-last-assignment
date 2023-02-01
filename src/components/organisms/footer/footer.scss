@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin:53px;
+    padding: 52px;
     .switch {
       margin-bottom: 20px;
       .switch-img {
@@ -18,14 +18,14 @@
     }
     .icon {
       display: flex;
-      gap: 16px;
-      
-      a{
-        color:black;
+      gap: 14px;
+
+      a {
+        color: black;
         text-decoration: none;
-        transition:0.2s ease;
-        &:hover{
-          color:$gray_nobel;
+        transition: 0.2s ease;
+        &:hover {
+          color: $gray_nobel;
         }
       }
     }
@@ -37,7 +37,7 @@
     justify-content: center;
     margin: 0;
     padding: 16px;
-    border-top:1px solid;
+    border-top: 1px solid;
     li {
       list-style: none;
       padding: 0 8px;
@@ -45,8 +45,9 @@
       a {
         text-decoration: none;
         color: $black;
-        &:hover{
-          color:$orange_bistre;
+        transition:0.2s ease;
+        &:hover {
+          color: $orange_bistre;
         }
       }
     }
@@ -71,22 +72,21 @@
     }
   }
   @media screen and(max-width:$breakpoint-md) {
-    .footer-top{
-      margin:32px;
+    .footer-top {
+      margin: 32px;
     }
-    .link{
-      display:flex;
+    .link {
+      display: flex;
       text-align: left;
       flex-wrap: wrap;
-      li{
-        border-left:0 solid;
-        padding:0px;
+      li {
+        border-left: 0 solid;
+        padding: 0px;
         padding-bottom: 8px;
-        width:50%;
-        a{
+        width: 50%;
+        a {
           line-height: 20px;
         }
-
       }
     }
   }
