@@ -45,7 +45,7 @@
       a {
         text-decoration: none;
         color: $black;
-        transition:0.2s ease;
+        transition: 0.2s ease;
         &:hover {
           color: $orange_bistre;
         }
@@ -73,7 +73,7 @@
   }
   @media screen and(max-width:$breakpoint-md) {
     .footer-top {
-      margin: 32px;
+      padding: 32px;
     }
     .link {
       display: flex;
@@ -87,6 +87,12 @@
         a {
           line-height: 20px;
         }
+      }
+      li:nth-child(7) {
+        padding-bottom: 0;
+      }
+      li:nth-child(8) {
+        padding-bottom: 0;
       }
     }
   }
