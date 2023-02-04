@@ -1,15 +1,25 @@
 @use "../../variables" as *;
 .news {
   color: $black;
-  
+  h2 {
+    margin-bottom:32px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+    @media (min-width: $breakpoint-lg) {
+      line-height: 57px;
+      font-size: 40px;
+    }
+  }
   .frame1 {
     background-color: $white;
-    padding-bottom: 30px;
+    
     .wrapper {
       padding: 20px;
       display: flex;
       flex-direction: column;
       gap: 10px;
+      height: 84px;
       border: solid $gray_gainsboro;
       border-width: 1px;
 
@@ -25,6 +35,7 @@
       a {
         text-decoration: none;
         color: $black;
+        font-size: 16px;
         transition: 0.2s ease;
         white-space: nowrap;
         overflow: hidden;
@@ -38,6 +49,7 @@
     }
   }
   .frame2 {
+    padding-top:30px;
     text-align: right;
   }
 }

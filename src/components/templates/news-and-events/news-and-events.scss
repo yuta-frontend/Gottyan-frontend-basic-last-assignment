@@ -1,0 +1,25 @@
+@use "../../variables" as *;
+.news-and-events {
+  background-color: $white_smoke;
+  padding: 56px;
+  .container {
+    display: flex;
+    .news {
+      margin-right: 40px;
+      width: 50%;
+    }
+    .events {
+      width: 50%;
+    }
+    @media screen and(max-width:$breakpoint-lg) {
+      flex-direction: column;
+      .news {
+        width: 100%;
+        padding-bottom: 35px;
+      }
+      .events {
+        width: 100%;
+      }
+    }
+  }
+}
